@@ -1,28 +1,24 @@
+/*==============================================================================================
+CSS USED FROM BOOTSTRAP AND MODIFIED AND ADDED BY
+ALL CHANGES BELONGS TO TEAM C-(ANURAG KAR, ANIKET K. ROCHWANI, PRAHAR JAMNIK AND ATHARVA BASTE
+================================================================================================*/
+
+/*FONTS*/
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Nunito+Sans:300,300i,400,400i,600,600i,700,700i&display=swap");
 
+/* font system used for better use*/
+/* suggested by anurag, aniket, prahar and atharva*/
 :root {
   --font-1: "Nunito Sans", sans-serif;
   --font-2: "Montserrat", sans-serif;
-
-  /* monospace
-     */
   --font-mono: Consolas, "Andale Mono", Courier, "Courier New", monospace;
 }
 
-/* ------------------------------------------------------------------- 
- * ## colors
- * ------------------------------------------------------------------- */
 :root {
-  /* color-1(#d9083c)
-     * color-2(#eb5e55)
-     * color-3(#f2d0a4)
-     */
   --color-1: hsla(345, 93%, 44%, 1);
   --color-2: hsla(4, 79%, 63%, 1);
   --color-3: hsla(34, 75%, 80%, 1);
 
-  /* theme color variations
-     */
   --color-1-lighter: hsla(345, 93%, 64%, 1);
   --color-1-light: hsla(345, 93%, 54%, 1);
   --color-1-dark: hsla(345, 93%, 34%, 1);
@@ -31,11 +27,6 @@
   --color-2-light: hsla(4, 79%, 73%, 1);
   --color-2-dark: hsla(4, 79%, 53%, 1);
   --color-2-darker: hsla(4, 79%, 43%, 1);
-
-  /* feedback colors
-     * color-error(#ffd1d2), color-success(#c8e675), 
-     * color-info(#d7ecfb), color-notice(#fff099)
-     */
   --color-error: hsla(359, 100%, 91%, 1);
   --color-success: hsla(76, 69%, 68%, 1);
   --color-info: hsla(205, 82%, 91%, 1);
@@ -44,13 +35,11 @@
   --color-success-content: hsla(76, 29%, 28%, 1);
   --color-info-content: hsla(205, 32%, 31%, 1);
   --color-notice-content: hsla(51, 30%, 30%, 1);
-
-  /* shades 
-     * generated using 
-     * Tint & Shade Generator 
-     * (https://maketintsandshades.com/)
-     */
   --color-black: #000000;
+
+
+  /* shades used for testing background obtained from site*/
+
   --color-gray-19: #0b0b0c;
   --color-gray-18: #161719;
   --color-gray-17: #202225;
@@ -72,15 +61,11 @@
   --color-gray-1: #f0f1f2;
   --color-white: #ffffff;
 
-  /* text
-     */
   --color-text: var(--color-gray-10);
   --color-text-dark: var(--color-white);
   --color-text-light: var(--color-gray-12);
   --color-placeholder: var(--color-gray-11);
-
-  /* buttons
-     */
+  /* BUTTONS */
   --color-btn: var(--color-gray-15);
   --color-btn-text: var(--color-white);
   --color-btn-hover: var(--color-white);
@@ -94,27 +79,19 @@
   --color-btn-stroke-hover: var(--color-white);
   --color-btn-stroke-hover-text: var(--color-black);
 
-  /* others
-     */
   --color-body: var(--color-1);
   --color-bg: #14171b;
   --color-border: var(--color-gray-17);
 }
 
-/* ------------------------------------------------------------------- 
- * ## vertical spacing and typescale
- * ------------------------------------------------------------------- */
+/* VERTICAL SPACE */
 :root {
-  /* spacing
-     * base font size: 18px 
-     * vertical space unit : 32px
-     */
+  /*spacing*/
   --base-size: 62.5%;
   --base-font-size: 1.8rem;
   --space: 3.2rem;
+  /* vertical space */
 
-  /* vertical spacing 
-     */
   --vspace-0_25: calc(0.25 * var(--space));
   --vspace-0_5: calc(0.5 * var(--space));
   --vspace-0_75: calc(0.75 * var(--space));
@@ -128,24 +105,8 @@
   --vspace-3_5: calc(3.5 * var(--space));
   --vspace-4: calc(4 * var(--space));
 
-  /* type scale
-     * ratio 1:2 | base: 18px
-     * -------------------------------------------------------
-     *
-     * --text-display-3 = (77.40px)
-     * --text-display-2 = (64.50px)
-     * --text-display-1 = (53.75px)
-     * --text-xxxl      = (44.79px)
-     * --text-xxl       = (37.32px)
-     * --text-xl        = (31.10px)
-     * --text-lg        = (25.92px)
-     * --text-md        = (21.60px)
-     * --text-size      = (18.00px) BASE
-     * --text-sm        = (15.00px)
-     * --text-xs        = (12.50px)
-     *
-     * -------------------------------------------------------
-     */
+  /* text ratio is 1:2 */
+
   --text-scale-ratio: 1.2;
   --text-size: var(--base-font-size);
   --text-xs: calc(
@@ -163,13 +124,11 @@
   --text-display-2: calc(var(--text-display-1) * var(--text-scale-ratio));
   --text-display-3: calc(var(--text-display-2) * var(--text-scale-ratio));
 
-  /* default button height
-     */
+  /*btn*/
   --vspace-btn: var(--vspace-2);
 }
 
-/* on mobile devices below 480px
- */
+/* for smaller size */
 @media screen and (max-width: 480px) {
   :root {
     --base-font-size: 1.6rem;
@@ -177,12 +136,9 @@
   }
 }
 
-/* ------------------------------------------------------------------- 
- * ## grid variables
- * ------------------------------------------------------------------- */
+/* for grids */
 :root {
-  /* widths for rows and containers
-     */
+  /* for width */
   --width-full: 100%;
   --width-max: 1200px;
   --width-wide: 1400px;
@@ -192,109 +148,53 @@
   --width-narrower: 900px;
   --width-grid-max: var(--width-max);
 
-  /* gutters
-     */
   --gutter-lg: 2rem;
   --gutter-md: 1.6rem;
   --gutter-mob: 1rem;
 }
 
-/* ==========================================================================
- * # normalize
- * normalize.css v8.0.1 | MIT License |
- * github.com/necolas/normalize.css
- *
- * -------------------------------------------------------------------------- */
-
-/* ------------------------------------------------------------------- 
- * ## document
- * ------------------------------------------------------------------- */
-
-/* 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in iOS.*/
-
 html {
   line-height: 1.15;
-  /* 1 */
   -webkit-text-size-adjust: 100%;
-  /* 2 */
 }
-
-/* ------------------------------------------------------------------- 
- * ## sections
- * ------------------------------------------------------------------- */
-
-/* Remove the margin in all browsers. */
 
 body {
   margin: 0;
 }
 
-/* Render the `main` element consistently in IE. */
-
 main {
   display: block;
 }
-
-/* Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari. */
 
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
 
-/* ------------------------------------------------------------------- 
- * ## grouping
- * ------------------------------------------------------------------- */
-
-/* 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE. */
-
 hr {
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
-  /* 1 */
   height: 0;
-  /* 1 */
   overflow: visible;
-  /* 2 */
 }
-
-/* 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers. */
 
 pre {
   font-family: monospace, monospace;
-  /* 1 */
   font-size: 1em;
-  /* 2 */
 }
-
-/* ------------------------------------------------------------------- 
- * ## text-level semantics
- * ------------------------------------------------------------------- */
-
-/* Remove the gray background on active links in IE 10. */
 
 a {
   background-color: transparent;
 }
 
-/* 1. Remove the bottom border in Chrome 57-
- * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari. */
 
 abbr[title] {
   border-bottom: none;
-  /* 1 */
   text-decoration: underline;
-  /* 2 */
   -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
-  /* 2 */
 }
 
-/* Add the correct font weight in Chrome, Edge, and Safari. */
 
 b,
 strong {
@@ -416,126 +316,74 @@ button:-moz-focusring,
   outline: 1px dotted ButtonText;
 }
 
-/* Correct the padding in Firefox. */
 
 fieldset {
   padding: 0.35em 0.75em 0.625em;
 }
 
-/* 1. Correct the text wrapping in Edge and IE.
- * 2. Correct the color inheritance from `fieldset` elements in IE.
- * 3. Remove the padding so developers are not caught out when they zero out
- *    `fieldset` elements in all browsers. */
-
 legend {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  /* 1 */
   color: inherit;
-  /* 2 */
   display: table;
-  /* 1 */
   max-width: 100%;
-  /* 1 */
   padding: 0;
-  /* 3 */
   white-space: normal;
-  /* 1 */
 }
 
-/* Add the correct vertical alignment in Chrome, Firefox, and Opera. */
 
 progress {
   vertical-align: baseline;
 }
 
-/* Remove the default vertical scrollbar in IE 10+. */
-
 textarea {
   overflow: auto;
 }
-
-/* 1. Add the correct box sizing in IE 10.
- * 2. Remove the padding in IE 10. */
 
 [type="checkbox"],
 [type="radio"] {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  /* 1 */
   padding: 0;
-  /* 2 */
 }
-
-/* Correct the cursor style of increment and decrement buttons in Chrome. */
 
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
-/* 1. Correct the odd appearance in Chrome and Safari.
- * 2. Correct the outline style in Safari. */
-
 [type="search"] {
   -webkit-appearance: textfield;
-  /* 1 */
   outline-offset: -2px;
-  /* 2 */
 }
-
-/* Remove the inner padding in Chrome and Safari on macOS. */
 
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-/* 1. Correct the inability to style clickable types in iOS and Safari.
- * 2. Change font properties to `inherit` in Safari. */
-
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
-  /* 1 */
   font: inherit;
-  /* 2 */
 }
-
-/* ------------------------------------------------------------------- 
- * ## interactive
- * ------------------------------------------------------------------- */
-
-/* Add the correct display in Edge, IE 10+, and Firefox. */
 
 details {
   display: block;
 }
 
-/* Add the correct display in all browsers. */
 
 summary {
   display: list-item;
 }
 
-/* ------------------------------------------------------------------- 
- * ## misc
- * ------------------------------------------------------------------- */
-
-/* Add the correct display in IE 10+. */
-
 template {
   display: none;
 }
 
-/* Add the correct display in IE 10. */
 
 [hidden] {
   display: none;
 }
 
-/* ===================================================================
- * # basic/base setup styles
- *
- * ------------------------------------------------------------------- */
 html {
   font-size: 62.5%;
   -webkit-box-sizing: border-box;
@@ -560,9 +408,6 @@ body {
   -webkit-text-size-adjust: none;
 }
 
-/* ------------------------------------------------------------------- 
- * ## media
- * ------------------------------------------------------------------- */
 svg,
 img,
 video embed,
@@ -572,9 +417,6 @@ object {
   height: auto;
 }
 
-/* ------------------------------------------------------------------- 
- * ## typography resets
- * ------------------------------------------------------------------- */
 div,
 dl,
 dt,
@@ -662,18 +504,6 @@ textarea {
   appearance: none;
 }
 
-/* ===================================================================
- * # Grid v3.0.0
- *
- *   -----------------------------------------------------------------
- * - Grid breakpoints are based on MAXIMUM WIDTH media queries, 
- *   meaning they apply to that one breakpoint and ALL THOSE BELOW IT.
- * - Grid columns without a specified width will automatically layout 
- *   as equal width columns.
- * ------------------------------------------------------------------- */
-
-/* rows
- * ------------------------------------- */
 .row {
   width: 92%;
   max-width: var(--width-grid-max);
@@ -694,8 +524,6 @@ textarea {
   margin-right: calc(var(--gutter-lg) * -1);
 }
 
-/* columns
- * -------------------------------------- */
 .column {
   -ms-flex: 1 1 0%;
   -webkit-box-flex: 1;
@@ -708,8 +536,6 @@ textarea {
   padding: 0;
 }
 
-/* flex row containers utility classes
- */
 .row.row-wrap {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -2101,6 +1927,8 @@ button,
   }
 }
 
+/* PRE_LOADER ADDED FROM CUSTOM CSS*/
+
 /* dots fade */
 .dots-fade > div {
   -webkit-animation: dots-fade 1.6s infinite ease;
@@ -2191,10 +2019,6 @@ button,
   }
 }
 
-/* ===================================================================
- * # forms 
- *
- * ------------------------------------------------------------------- */
 fieldset {
   border: none;
   margin-bottom: var(--vspace-0_5);
@@ -2348,9 +2172,6 @@ label > input[type="radio"] {
   color: var(--color-placeholder) !important;
 }
 
-/* ------------------------------------------------------------------- 
- * ## change autocomplete styles in Chrome
- * ------------------------------------------------------------------- */
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus input:-webkit-autofill,
@@ -2363,11 +2184,6 @@ select:-webkit-autofill:focus {
   -webkit-transition: background-color 5000s ease-in-out 0s;
   transition: background-color 5000s ease-in-out 0s;
 }
-
-/* ===================================================================
- * # buttons
- *
- * ------------------------------------------------------------------- */
 .btn,
 button,
 input[type="submit"],
@@ -2492,14 +2308,6 @@ input::-moz-focus-inner {
   padding: 0;
 }
 
-/* =================================================================== 
- * # additional components
- *
- * ------------------------------------------------------------------- */
-
-/* ------------------------------------------------------------------- 
- * ## additional typo styles
- * ------------------------------------------------------------------- */
 .drop-cap:first-letter {
   float: left;
   font-family: var(--font-2);
@@ -2538,9 +2346,6 @@ input::-moz-focus-inner {
   content: ": ";
   margin-left: -0.2em;
 }
-
-/* dictionary definition style 
- * ----------------------------------------------- */
 .dictionary-style dt {
   display: inline;
   counter-reset: definitions;
@@ -2560,18 +2365,6 @@ input::-moz-focus-inner {
   content: counter(definitions, decimal) ". ";
 }
 
-/** 
- * Pull Quotes
- * -----------
- * markup:
- *
- * <figure class="pull-quote">
- *		<blockquote>
- *			<p></p>
- *		</blockquote>
- * </figure>
- *
- * --------------------------------------------------------------------- */
 .pull-quote {
   position: relative;
   padding: 0;
@@ -2608,18 +2401,6 @@ input::-moz-focus-inner {
   left: 50%;
 }
 
-/** 
- * Stats Tab
- * ---------
- * markup:
- *
- * <ul class="stats-tabs">
- *		<li><a href="#">[value]<em>[name]</em></a></li>
- *	</ul>
- *
- * Extend this object into your markup.
- *
- * --------------------------------------------------------------------- */
 .stats-tabs {
   padding: 0;
   margin: var(--vspace-1) 0;
@@ -2663,9 +2444,6 @@ input::-moz-focus-inner {
   color: var(--color-text-light);
 }
 
-/* ------------------------------------------------------------------- 
- * ## skillbars
- * ------------------------------------------------------------------- */
 .skill-bars {
   list-style: none;
   margin: var(--vspace-2) 0 var(--vspace-1);
@@ -2871,10 +2649,6 @@ input::-moz-focus-inner {
   background-color: var(--color-notice-content);
 }
 
-/* ===================================================================
- * # common and reusable styles
- *
- * ------------------------------------------------------------------- */
 .wide {
   max-width: var(--width-wide);
 }
@@ -2931,9 +2705,6 @@ input::-moz-focus-inner {
   margin-bottom: var(--vspace-0_5);
 }
 
-/* ------------------------------------------------------------------- 
- * ## item list 
- * ------------------------------------------------------------------- */
 .item-list {
   margin-top: var(--vspace-2_5);
 }
@@ -2942,9 +2713,6 @@ input::-moz-focus-inner {
   margin-bottom: var(--vspace-0_5);
 }
 
-/* ------------------------------------------------------------------- 
- * ## slick slider 
- * ------------------------------------------------------------------- */
 .slick-slider .slick-slide {
   outline: none;
 }
@@ -2996,10 +2764,7 @@ input::-moz-focus-inner {
   background: var(--color-1);
 }
 
-/* ------------------------------------------------------------------- 
- * responsive:
- * common and reusable styles
- * ------------------------------------------------------------------- */
+
 @media screen and (max-width: 1100px) {
   .item-list .item {
     padding-right: 2rem;
@@ -3040,10 +2805,6 @@ input::-moz-focus-inner {
   }
 }
 
-/* ===================================================================
- * # site header
- *
- * ------------------------------------------------------------------- */
 .s-header {
   z-index: 100;
   width: 100%;
@@ -3092,9 +2853,6 @@ input::-moz-focus-inner {
   position: relative;
 }
 
-/* -------------------------------------------------------------------
- * ## header logo
- * ------------------------------------------------------------------- */
 .s-header__logo {
   z-index: 101;
   display: inline-block;
@@ -3122,9 +2880,6 @@ input::-moz-focus-inner {
   margin-bottom: 0;
 }
 
-/* -------------------------------------------------------------------
- * ## main navigation
- * ------------------------------------------------------------------- */
 .s-header__nav-wrap {
   padding-left: 21.6rem;
 }
@@ -3157,9 +2912,7 @@ input::-moz-focus-inner {
   margin: 0 1rem;
 }
 
-/* ------------------------------------------------------------------- 
- * ## mobile menu toggle
- * ------------------------------------------------------------------- */
+
 .s-header__menu-toggle {
   z-index: 101;
   display: none;
@@ -3245,9 +2998,6 @@ input::-moz-focus-inner {
   transform: rotate(225deg);
 }
 
-/* ------------------------------------------------------------------- 
- * ## header contact button
- * ------------------------------------------------------------------- */
 .s-header__content .btn {
   --btn-height: calc(var(--vspace-btn) - 1.2rem);
 
@@ -3301,10 +3051,6 @@ input::-moz-focus-inner {
   fill: black;
 }
 
-/* ------------------------------------------------------------------- 
- * responsive:
- * header
- * ------------------------------------------------------------------- */
 @media screen and (max-width: 1700px) {
   .s-header__logo {
     left: 6rem;
@@ -3453,10 +3199,7 @@ input::-moz-focus-inner {
   }
 }
 
-/* ===================================================================
- * # hero
- *
- * ------------------------------------------------------------------- */
+/* CUSTOM HERO ADDED */
 .s-hero {
   background-color: #000000;
   width: 100%;
@@ -3464,33 +3207,7 @@ input::-moz-focus-inner {
   overflow: hidden;
   position: relative;
 }
-/*
-.s-hero__bg {
-    background-image: url(../images/he.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-*/
-/*parralax*/
-/*
-.s-hero__bg::after {
-    content: " ";
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;    
-    transform: translateZ(-1px) scale(1.5);
-    background-size: 100%;
-    z-index: -1;
-  }
-*/
+
 
 /* ------------------------------------------------------------------- 
  * ## hero content
@@ -3516,9 +3233,6 @@ input::-moz-focus-inner {
   position: relative;
   left: 0rem;
 }
-
-/* hero content about
- * ----------------------------------------------- */
 .s-hero__content-about {
   font-family: sans-serif;
   font-weight: 28;
@@ -3533,10 +3247,7 @@ input::-moz-focus-inner {
   margin-bottom: var(--vspace-1);
 }
 
-/* hero content social
- * ----------------------------------------------- */
 .s-hero__content-social {
-  /*padding-left: 16rem;*/
   position: relative;
   top: 45%;
   left: 45%;
@@ -3569,9 +3280,6 @@ input::-moz-focus-inner {
   margin-right: 0;
 }
 
-/* -------------------------------------------------------------------
- * ## animate intro content
- * ------------------------------------------------------------------- */
 html.ss-preload .s-hero__content {
   opacity: 0;
 }
@@ -3591,11 +3299,6 @@ html.no-csstransitions .s-hero__content {
   opacity: 1;
 }
 
-/* ------------------------------------------------------------------- 
- * ## animations
- * ------------------------------------------------------------------- */
-
-/* fade in */
 @-webkit-keyframes fadeIn {
   from {
     opacity: 0;
@@ -3684,10 +3387,6 @@ html.no-csstransitions .s-hero__content {
   }
 }
 
-/* ------------------------------------------------------------------- 
- * responsive:
- * content
- * ------------------------------------------------------------------- */
 @media screen and (max-width: 1600px) {
   .s-hero__content {
     max-width: 1100px;
@@ -3700,10 +3399,6 @@ html.no-csstransitions .s-hero__content {
   }
 }
 
-/* ===================================================================
- * # about
- *
- * ------------------------------------------------------------------- */
 .s-about {
   background-color: var(--color-bg);
   padding-top: calc(4 * var(--space));
@@ -3719,9 +3414,6 @@ html.no-csstransitions .s-hero__content {
   left: calc(6vw + 1px);
 }
 
-/* ------------------------------------------------------------------- 
- * ## about photo
- * ------------------------------------------------------------------- */
 .s-about__photo-block {
   position: relative;
 }
@@ -3738,9 +3430,6 @@ html.no-csstransitions .s-hero__content {
   bottom: var(--vspace-1);
 }
 
-/* ------------------------------------------------------------------- 
- * ## about process
- * ------------------------------------------------------------------- */
 .s-about__process {
   counter-reset: ctr;
 }
@@ -3773,10 +3462,6 @@ html.no-csstransitions .s-hero__content {
   position: relative;
 }
 
-/* ===================================================================
- * # services
- *
- * ------------------------------------------------------------------- */
 .s-services {
   background-color: var(--color-bg);
   padding-top: calc(6 * var(--space));
@@ -3824,10 +3509,6 @@ html.no-csstransitions .s-hero__content {
   background-image: url(../images/icons/services/icon-ecommerce.svg);
 }
 
-/* ------------------------------------------------------------------- 
- * responsive:
- * services
- * ------------------------------------------------------------------- */
 @media screen and (max-width: 1200px) {
   .s-services {
     padding-top: calc(5 * var(--space));
@@ -3840,18 +3521,13 @@ html.no-csstransitions .s-hero__content {
   }
 }
 
-/* ===================================================================
- * # portfolio
- *
- * ------------------------------------------------------------------- */
+
+/* PORTFOLIO ADDED CUSTOM CSS */
 .s-portfolio {
   background-color: var(--color-bg);
   padding-top: 12rem;
 }
 
-/* ------------------------------------------------------------------- 
- * ## portfolio list
- * ------------------------------------------------------------------- */
 .s-portfolio__list {
   max-width: 80rem;
   padding-top: 2rem;
@@ -3866,8 +3542,6 @@ html.no-csstransitions .s-hero__content {
   display: none;
 }
 
-/* thumbnail
- *---------------------------------------------- */
 .folio-item__thumb a {
   display: block;
 }
@@ -3917,8 +3591,6 @@ html.no-csstransitions .s-hero__content {
   margin-bottom: 0;
 }
 
-/* portfolio info
- *---------------------------------------------- */
 .folio-item__info {
   z-index: 2;
   padding: 0 3rem;
@@ -3990,8 +3662,6 @@ html.no-csstransitions .s-hero__content {
   color: black;
 }
 
-/* on hover
- *---------------------------------------------- */
 .folio-item:hover .folio-item__thumb a::before {
   opacity: 1;
   visibility: visible;
@@ -4018,10 +3688,6 @@ html.no-csstransitions .s-hero__content {
   transform: translateX(0);
 }
 
-/* ------------------------------------------------------------------- 
- * responsive:
- * portfolio
- * ------------------------------------------------------------------- */
 @media screen and (max-width: 1200px) {
   .s-portfolio {
     padding-top: calc(5 * var(--space));
@@ -4067,10 +3733,6 @@ html.no-csstransitions .s-hero__content {
   }
 }
 
-/* ===================================================================
- * # clients
- *
- * ------------------------------------------------------------------- */
 .s-clients {
   background-color: var(--color-bg);
   padding-top: calc(6 * var(--space));
@@ -4078,9 +3740,6 @@ html.no-csstransitions .s-hero__content {
   position: relative;
 }
 
-/* ------------------------------------------------------------------- 
- * ## clients slider
- * ------------------------------------------------------------------- */
 .clients-outer {
   max-width: 1080px;
   margin-top: var(--vspace-2);
@@ -4112,9 +3771,6 @@ html.no-csstransitions .s-hero__content {
   opacity: 1;
 }
 
-/* ------------------------------------------------------------------- 
- * ## testimonials
- * ------------------------------------------------------------------- */
 .testimonials {
   background-color: var(--color-bg);
   max-width: 800px;
@@ -4215,10 +3871,6 @@ html.no-csstransitions .s-hero__content {
   color: var(--color-text-light);
 }
 
-/* ------------------------------------------------------------------- 
- * responsive:
- * clients
- * ------------------------------------------------------------------- */
 @media screen and (max-width: 1400px) {
   .clients-outer {
     max-width: 1000px;
@@ -4288,10 +3940,6 @@ html.no-csstransitions .s-hero__content {
   }
 }
 
-/* ===================================================================
- * # contact
- *
- * ------------------------------------------------------------------- */
 .s-contact {
   background-color: var(--color-1);
   padding-top: calc(6 * var(--space));
@@ -4323,10 +3971,6 @@ html.no-csstransitions .s-hero__content {
   border-bottom: 2px solid white;
 }
 
-/* ------------------------------------------------------------------- 
- * responsive:
- * contact
- * ------------------------------------------------------------------- */
 @media screen and (max-width: 1600px) {
   .s-contact__email {
     font-size: calc(var(--text-size) * 6);
@@ -4345,9 +3989,6 @@ html.no-csstransitions .s-hero__content {
   }
 }
 
-/* ------------------------------------------------------------------- 
- * ## go top
- * ------------------------------------------------------------------- */
 .ss-go-top {
   z-index: 2;
   opacity: 0;
@@ -4383,10 +4024,6 @@ html.no-csstransitions .s-hero__content {
   transform: scale(1);
 }
 
-/* ------------------------------------------------------------------- 
- * responsive:
- * footer
- * ------------------------------------------------------------------- */
 
 @media screen and (max-width: 800px) {
   .ss-go-top a {
@@ -4421,9 +4058,9 @@ html.no-csstransitions .s-hero__content {
     font-size: 1.4rem;
   }
 }
-/*==============================================
-CUSTOM CSS====================================
-==============================================*/
+
+
+/* CSS FOR PROFILE ADDED */
 
 .container {
   position: absolute;
@@ -4461,6 +4098,7 @@ CUSTOM CSS====================================
   max-width: 880px;
 }
 
+/* CSS FOR CONTENT ADDED HERE */
 #shad {
   box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 16px, rgba(0, 0, 0, 0.05) 0px 8px 32px;
   padding-left: 2rem;
@@ -4470,6 +4108,8 @@ CUSTOM CSS====================================
   margin-bottom: 4rem;
 }
 
+/* CSS FOR TIMELINE ADDED */
+/* RIGHTS - ANURAG */
 .hexa {
   border: 0px;
   float: left;
@@ -4808,3 +4448,8 @@ CUSTOM CSS====================================
     text-align: left;
   }
 }
+
+
+/*=================================================
+COMPLETED CSS 
+===================================================*/
