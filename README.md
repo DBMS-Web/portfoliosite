@@ -6,5 +6,9 @@
   - `commit` chnages to the `main` branch.
   - `push` the new branch to `origin`.
   -  Then apply for `pull request` and get it `merged`
+# Technologies Used:
+  - HTML5
+  - CSS3(Bootstrap/Custom/Demos)
+  - JS(jQuery)
   
 - Check the deployment pages in `github pages` for website working or click the link [WEBSITE LINK](https://dbms-web.github.io/portfoliosite/)
