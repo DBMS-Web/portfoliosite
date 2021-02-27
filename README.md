@@ -1,4 +1,4 @@
-# DBMS 2020 Phase 1 Project Under Kakarla Sir for *TEAM 'C'*
+# DBMS 2020 Phase 1 Project for *TEAM 'C'*
 - For adding change follow these steps:
   - `clone` this repository using `git clone`
   -  create a `new branch` and name it.
